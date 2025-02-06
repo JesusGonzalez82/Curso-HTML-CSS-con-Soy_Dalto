@@ -1,0 +1,19 @@
+/* Selector por elemento */
+
+li{
+    color:red;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+}
+/* Selector por clase */
+.falta{
+    color: blue;
+}
+
+/* Selector por ID */
+#esencial{
+    color: orange;
+}
+

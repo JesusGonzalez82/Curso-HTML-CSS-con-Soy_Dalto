@@ -1,0 +1,23 @@
+p {
+    color: red;
+    font-family: montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: oblique;
+    text-align: justify;
+    line-height: 1.4;
+    letter-spacing: 3px;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+span{
+    text-decoration: line-through;
+    color: black;
+    text-transform: capitalize;
+}
+
