@@ -1,0 +1,22 @@
+.box{
+    padding: 20px 50px;
+    background: hsl(210, 40%, 82%);
+    margin: 20px;
+    margin-left: 100px;
+    text-align: center;
+    color: rgb(40, 143, 253);
+    border-top: 3px solid #2875fb;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+/* RGB 256 posibles combinaciones posibles para cada una de los valor (r g b) 
+da como resultado 16.777.212 colores
+El valor de cada color va de 0 a 255... p.e. R 125 G 5 B 65 */
+/* RGBA es igual que RGB pero tambien controla la transparencia */
+/* HEXADECIMAL #  tambien tiene 16.777.212 R 1-256 G 1-256 B 1-256
+06c
+17d
+28e
+39f
+4a
+5b*/
