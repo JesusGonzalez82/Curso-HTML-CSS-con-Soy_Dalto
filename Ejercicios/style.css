@@ -1,0 +1,48 @@
+body{
+    background-color: white;
+    font-family: sans-serif;
+    color: white;
+}
+
+.tarjeta{
+    background-color: coral;
+    text-align: center;
+    width: 50vh;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px 10px;
+    box-shadow: 0 0 45px #0006;
+    border-radius: 6px;
+}
+
+.gold{
+    background-color: goldenrod;
+}
+
+.blue{
+    background: #6ac;
+}
+
+.titulo{
+    /* padding-top: 20px; */
+    font-size: 22px;
+    margin: 0;
+}
+
+.subtitulo{
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.contenido{
+    font-size: 10px;
+    padding: 10 px 20px;
+    padding-bottom: 0;
+    text-align: justify;
+}
+
+.img{
+    width: 100px;
+    border-radius: 50%;
+}

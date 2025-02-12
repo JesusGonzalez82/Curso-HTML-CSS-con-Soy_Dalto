@@ -1,0 +1,22 @@
+body{
+    background-color: red;
+    margin: 0;
+}
+
+.box{
+    width: 50vh;
+    height: 60vh;
+    background: linear-gradient(transparent, #000a);
+    margin: 0;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900;
+}
+h1{
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 20px; 
+    font-family: sans-serif;
+}
