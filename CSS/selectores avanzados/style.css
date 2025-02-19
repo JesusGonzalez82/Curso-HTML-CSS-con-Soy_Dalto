@@ -1,0 +1,11 @@
+/* Con el simbolo del $ se aplica a los elementos que terminen en algo determinado */
+img[src$="jpg" i]{
+    width: 50%;
+}
+/* Con el simbolo ^ se aplica a los elementos que empiezen en algo determinado */
+img[src^="sony" i]{
+    width: 50%;
+}
+ul strong{
+    color: red;
+}
