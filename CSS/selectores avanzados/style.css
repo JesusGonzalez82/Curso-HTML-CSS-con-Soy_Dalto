@@ -6,6 +6,29 @@ img[src$="jpg" i]{
 img[src^="sony" i]{
     width: 50%;
 }
-ul strong{
+
+/* Selector descendente */
+
+ul li {
+    color: #555;
+}
+/* Selector por hijo directo */
+li > em{
     color: red;
+}
+
+/* Selector de hermanos Adyacente */
+
+h1 + p {
+    color: blue;
+}
+
+/* Selector de hermanos generales */
+
+h1 ~ p {
+    color: blueviolet;
+}
+
+h1, p {
+    color: gold;
 }
