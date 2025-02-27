@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: sans-serif;
 }
 
 div{
@@ -7,11 +8,59 @@ div{
     background-color: #999;
 }
 
-a{
+.a__link{
     background-color: red;
     color: white;
     display: block;
     border: 1px solid black;
     margin: 20px;
     padding: 20px;
+}
+p{
+    background-color: #000;
+    color: white;
+    display: inline;
+    margin: 5px;
+    /* padding: 20px;
+    height: 100px; */
+}
+
+.nav{
+    background-color: #48e;
+}
+
+.nav__list{
+    margin: 0;
+    text-align: center;
+}
+.nav__item{
+    display: inline-block;
+    
+}
+
+.nav__link{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: #48e;
+}
+
+.nav__link:hover{
+    background-color: #59e;
+}
+
+.link--button{
+    border: 1px solid white;
+    background-color: #fff;
+    padding: 6px 12px;
+    color: #48e;
+    border-radius: 5px;
+    margin-left:60px ;
+    /* display: none; */
+}
+
+.link--button:hover{
+    background: transparent;
+    color: #fff;
 }
