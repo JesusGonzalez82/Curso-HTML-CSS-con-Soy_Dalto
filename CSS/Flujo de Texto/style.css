@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #ddd;
+}
+
+.box{
+    width: 240px;
+    height: 240px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #0006;
+    white-space: normal;
+    /* white-space: nowrap; Sin saltos de linea */
+    /* white-space: pre; Detecta los saltos de linea que nosotros ponemos */
+    /* white-space: pre-wrap; Respeta los saltos de linea pero se ajusta para no desbordar el contenido */
+    /* text-overflow: ellipsis; Tres puntos indicando que hay más texto, no funciona con white-space: normal */
+    overflow: hidden;
+    word-wrap: pretty;
+}
+
+h1{
+    word-wrap: balance;
+}
