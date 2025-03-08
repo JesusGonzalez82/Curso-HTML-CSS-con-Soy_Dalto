@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    font-family: 'roboto';
+    background-color: #ccc;
+}
+
+div, body{
+    box-sizing: border-box;
+}
+
+.flexbox{
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #0009;
+    margin: 20px;
+    /* height: 100px; */
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    /* background-color: #fff; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column;
+    /* flex-direction: column-reverse; */
+    /* direction: ltr; */
+    /* flex-wrap: wrap; */
+    /* flex-flow: row nowrap; */   
+    /* height: 100vh; */
+    /* align-content: center; */
+}
+
+.flex-item{
+    width: 100px;
+    background-color: #911;
+    /* margin: 10px; */
+    color: #fff;
+    font-size: 40px;
+    direction: rtl;
+    text-align: center;
+    /* order: 3; */
+    /* width: 200px; */
+    /* flex-basis: auto;
+    flex-shrink: 1;
+    flex-grow: 0; */
+    flex: 1 1 100px;
+}
+
+.flex-item:nth-child(2n){
+    background-color: #f77;
+    /* order: 1; */
+    /* flex-grow: 2;
+    flex-shrink: 0; */
+
+}
+
+.flex-item:last-child{
+    background-color: #000;
+    /* order: 2; */
+}
