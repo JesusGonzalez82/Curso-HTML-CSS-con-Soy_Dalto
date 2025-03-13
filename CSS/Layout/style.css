@@ -58,12 +58,18 @@ h1{
     flex-wrap: wrap;
     justify-content:center;
     padding: 6px 20px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 5px;
+    box-shadow: 0 0 25px #0006;
 }
 
 .nav__ul{
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 0; 
 }
 
 .nav__item{
@@ -114,4 +120,13 @@ h1{
 
 .nav__logo{
     width: 60px;
+}
+
+/* MAIN SECTION */
+
+main{
+    max-width: 800px;
+    margin: auto;
+    font-size: 30px;
+    
 }
