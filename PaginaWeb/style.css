@@ -1,11 +1,13 @@
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: 'Montserrat';
     background-color: #e2eaff;
     color: #101632dd;
+    
 }
 
 div, ul, nav, header, footer, a, li, label, body{
@@ -23,6 +25,12 @@ div, ul, nav, header, footer, a, li, label, body{
     width: 100%;
     container-type: inline-size;
     container-name: header;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    font-size: 25px;
+    position: sticky;
+    top: 0;
 }
 
 .header__open-nav-button{
@@ -205,6 +213,8 @@ h1{
         align-items: center;
         border-radius: 0px 25px 25px 0px;
         box-shadow: 0px 0px 9px #0002;
+        /* margin: auto; */
+        
     }
 
     h1{
@@ -214,7 +224,7 @@ h1{
     }
 
     .profile__data{
-        max-width: 600px;
+        max-width: 1200px;
     }
 
     .profile__img-container{
@@ -231,3 +241,177 @@ h1{
 }
 
 /* ------------ PROFILE ENDS ------------ */
+
+
+
+/* ------------ PORTFOLIO SECTION ------------ */
+
+.portfolio{
+    background-color: #18233f;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    container-name: portfolio;
+    container-type: inline-size;
+    justify-content: space-evenly;
+}
+
+.portfolio__title{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.portfolio__project-container{
+    display: grid;
+    grid-template-columns: 1;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    gap: 12px;
+    padding: 12px;
+    min-height: 90vh;
+}
+
+.portolio__project{
+    background-image: linear-gradient(#0009,#0009), url("images.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+}
+
+.portolio__project:hover{
+    opacity: 0.74;
+    outline: 2px solid #fff6;
+}
+
+
+/* ------------ PORTFOLIO QUERIES ------------ */
+
+@container portfolio (min-width: 56.25rem){
+    .portfolio__project-container{
+        grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    }
+
+    .portolio__project:first-child{
+        grid-column: span 2;
+    }
+
+    .portolio__project:nth-child(6){
+        grid-column: span 2;
+    }
+}
+@container portfolio (min-width: 81.25rem){
+    .portfolio__project-container{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .portolio__project:first-child{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .portolio__project:nth-child(6){
+        grid-column: span 4;
+    }
+}
+
+
+/* ------------ PORTFOLIO ENDS ------------ */
+
+
+/* ------------ CONTACT SECTION ------------ */
+
+.form{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    container-name: form;
+    container-type: inline-size;
+}
+
+.form__form{
+    padding: 12px;
+    max-width: 600px;
+    width: 100%;
+    display: grid;
+}
+
+.form__input-container :is(input, textarea){
+    width: 100%;
+    padding: 9px 6px;
+    font-size: 16px;
+    margin: 4px;
+    border: none;
+    box-shadow: 3px 3px 6px #0003;
+}
+
+.form__input-container textarea{
+    resize: none;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.form__input-container input[type="submit"]{
+    padding: 12px;
+    background-color: #18233f;
+    color: #fff;
+}
+
+.form__title{
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+/* ------------ CONTACT QUERIES ------------ */
+
+@container form (min-width: 56.25rem){
+    .form__form{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "name lastname"
+        "email email"
+        "message message"
+        "button button";
+        gap: 12px;
+        background-image: linear-gradient(#18233f33, #18333f11);
+        border-radius: 10px;
+    }
+
+    .form__input-container:first-child{
+        grid-area: name;
+    }
+    .form__input-container:nth-child(2){
+        grid-area: lastname;
+    }
+    .form__input-container:nth-child(3){
+        grid-area: email;
+    }
+    .form__input-container:nth-child(4){
+        grid-area: message;
+    }
+    .form__input-container:nth-child(5){
+        grid-area: button;
+    }
+}
+
+/* ------------ CONTACT ENDS ------------ */
+
+/* ------------ FOOTER SECTION ------------ */
+
+footer{
+    padding: 60px;
+    text-align: center;
+    background-color: #18233f;
+    color: #fff7;
+    font-size: 16px;
+
+}
+
+/* ------------ FOOTER SECTION ------------ */
