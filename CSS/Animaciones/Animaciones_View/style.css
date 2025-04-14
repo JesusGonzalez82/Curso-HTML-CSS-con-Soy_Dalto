@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    height: 200vh;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.creciente{
+    height: 100vh;
+}
+
+.box{
+    view-timeline: --caja block;
+    background-color: #48e;
+    padding: 20px;
+    animation: llenar-barra;
+    animation-timeline: --caja;
+    animation-timing-function: linear;
+}
+
+@keyframes llenar-barra{
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 100%;
+        background-color: #ff3;
+    }
+}
+
