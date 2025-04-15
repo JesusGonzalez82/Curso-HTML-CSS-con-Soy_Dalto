@@ -23,14 +23,13 @@ div, ul, nav, header, footer, a, li, label, body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    container-type: inline-size;
-    container-name: header;
     position: relative;
     z-index: 10;
     text-align: center;
     font-size: 25px;
     position: sticky;
     top: 0;
+    color: #48e;
 }
 
 .header__open-nav-button{
@@ -78,7 +77,7 @@ div, ul, nav, header, footer, a, li, label, body{
 }
 
 .header__nav-item a{
-    color: #48e;
+    color: inherit;
 }
 
 .header__nav-item a:not(:is(:hover, :active)){
@@ -87,7 +86,18 @@ div, ul, nav, header, footer, a, li, label, body{
 
 /* ------------ HEADER QUERIES ------------ */
 
-@container header (min-width: 600px){
+@media screen and (min-width: 600px){
+    
+    .header{
+        padding: 20px 0;
+        animation: header-movement both;
+        animation-timeline: scroll();
+        position: sticky;
+        top: 0;
+        animation-range: 10px 100px;
+    }
+
+
     .header__nav{
         display: block;
         position: static;
@@ -95,6 +105,7 @@ div, ul, nav, header, footer, a, li, label, body{
         width: auto;
         justify-content: space-between;
         z-index: +1;
+        background-color: initial;
 
     }
     .header__nav-list{
@@ -116,6 +127,7 @@ div, ul, nav, header, footer, a, li, label, body{
 .profile{
     container-type: inline-size;
     container-name: profile;
+    animation: aparecer 3s -.6s both;
 }
 
 .profile__wrapper{
@@ -281,6 +293,9 @@ h1{
     display: grid;
     place-content: center;
     border-radius: 8px;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 44%;
 }
 
 .portolio__project:hover{
@@ -334,6 +349,9 @@ h1{
     padding: 40px 0;
     container-name: form;
     container-type: inline-size;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 15% contain 44%;
 }
 
 .form__form{
@@ -414,4 +432,29 @@ footer{
 
 }
 
-/* ------------ FOOTER SECTION ------------ */
+/* ------------ FOOTER END ------------ */
+
+
+/* ------------ HEADER ANIMATION ------------ */
+
+@keyframes header-movement{
+    from{
+        padding: 20px 0;
+        background-color: #fff;
+        
+    }
+    to{
+        padding: 0;
+        background-color: #0006;
+        color: #fff;
+    }
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
