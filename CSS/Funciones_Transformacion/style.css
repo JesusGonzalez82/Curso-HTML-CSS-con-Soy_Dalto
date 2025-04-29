@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+}
+
+.box{
+    /* background-color: #000; */
+    margin: auto;
+    padding: 20px 50px;
+    border: 4px solid #000;
+    width: fit-content;
+    transform: skew(20deg);
+    transform: translate(100px);
+}
+
+.box:first-child{
+    transform: skew(20deg);
+    transition: transform 6s;
+}
+
+.box:first-child:hover{
+    transform: skew(10deg);
+}
