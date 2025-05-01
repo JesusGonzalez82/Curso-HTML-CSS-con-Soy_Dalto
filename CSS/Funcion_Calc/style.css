@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-principal: #48e;
+    --alto-del-box: 200px;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.box{
+    /* margin: 50px auto; */
+    font-size: 30px;
+    /* width: min(900px,100%); */
+    /* width: max(900px,100%); */
+    font-size: clamp(2.4rem, 2.2vw,4rem);
+    border: 5px solid #000;
+    /* Con la funcion calc() podemos sumar o restar y no hace falta que sean los mismos tipo de medida.  */ 
+    /* width: calc(60% + 200px); */
+}
+
+.box:first-child{
+    height: var(--alto-del-box);
+}
+
+.box:nth-child(2){
+    height: calc(90vh - var(--alto-del-box));
+    overflow: auto;
+}
